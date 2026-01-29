@@ -1,0 +1,9 @@
+Time Complexity : how much time an algorithm takes as input size increases
+
+Big O -> Represents the upper  bound of running time, it gives the worst case scanerio for an algorithm, it describe the maximum time an algorithm takes 
+
+1. O(1): constant time-> the time taken does not depend on the input of algorithm
+2. O(log n): logarathmic time-> the time grows logarathmically as the input size increases, often seen in algorithm that divide input into half;
+3. O(n): Linear time-> the time grows directly Propotional to input Size();
+4. O(n log n) : Linearithmic Time -> mix of linear and Linearithmic;
+5. O(n^2): Quadratic Time-> the time grows Propotional to the 
