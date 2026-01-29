@@ -1,6 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// LeetCode 167: Two Sum II - Input Array Is Sorted
+// https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+
 vector<int> twoSum(vector<int> &nums, int target)
 {
     int st = 0;

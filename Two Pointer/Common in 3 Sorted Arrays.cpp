@@ -6,6 +6,8 @@ class Solution {
   public:
     // Function to find common elements in three arrays.
     vector<int> commonElements(vector<int> &arr1, vector<int> &arr2,
+// GeeksforGeeks: Find common elements in three sorted arrays
+// https://www.geeksforgeeks.org/find-common-elements-three-sorted-arrays/
                                vector<int> &arr3) {
         // Code Here
         int i=0;

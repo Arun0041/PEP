@@ -3,6 +3,8 @@ using namespace std;
 
 class Solution {
 public:
+        // LeetCode 35: Search Insert Position
+        // https://leetcode.com/problems/search-insert-position/
     int searchInsert(vector<int>& nums, int target) {
         int s=0,e=nums.size()-1;
         int ans=nums.size();

@@ -7,7 +7,7 @@ class Solution {
         int end=arr.size()-1;
         int ans=-1;
         while(st<=end){
-            int mid=st+(end-st);
+            int mid=st+(end-st)/2;
             if(arr[mid]==x){
                 ans=mid;
                 end=mid-1;

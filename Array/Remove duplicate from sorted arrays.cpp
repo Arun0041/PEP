@@ -1,6 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// LeetCode 26: Remove Duplicates from Sorted Array
+// https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+
 int removeDuplicates(vector<int> &nums){
     int k=0;
     int num=INT_MAX; // iterate through the array and check for duplicates

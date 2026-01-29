@@ -3,23 +3,24 @@
 
 #include<bits/stdc++.h>
 using namespace std;
+// LeetCode 283: Move Zeroes
+// https://leetcode.com/problems/move-zeroes/
 
 // Method 1: with extra space 
 void moveZerosLast(vector<int>& arr){
     int n=arr.size();
     vector<int> ans;
-    for(int i=0;i<n;i++){
-        if(arr[i]>0){
+    // push all non-zero elements
+    for (int i = 0; i < n; i++) {
+        if (arr[i] != 0) {
             ans.push_back(arr[i]);
         }
     }
-    for(int i=0;i<n;i++){
-        if(arr[i]=0){
-            ans.push_back(arr[i]);
-        }
-    }
+    // append zeros to fill remaining positions
+    int zeros = n - (int)ans.size();
+    for (int i = 0; i < zeros; i++) ans.push_back(0);
 
-    for(int i=0;i<n;i++){
+    for (int i = 0; i < n; i++) {
         arr[i] = ans[i];
     }
 }

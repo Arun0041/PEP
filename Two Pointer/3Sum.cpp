@@ -1,6 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// LeetCode 15: 3Sum
+// https://leetcode.com/problems/3sum/
+
 bool hasTripletWithZeroSum(vector<int>& arr){
     int n=arr.size();
     sort(arr.begin(), arr.end());
