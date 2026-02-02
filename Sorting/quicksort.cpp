@@ -1,6 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// Quick Sort Algorithm
+// Time Complexity: O(n log n) average, O(n^2) worst case
+// Space Complexity: O(log n)
+
 int partition(vector<int> &arr, int start, int end){
     int pivot = arr[end];
     int i = start - 1;

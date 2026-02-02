@@ -1,5 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
+
+// Reverse a String
+// Input: "Hello" → Output: "olleH"
+
 int main(){
     string s;
     cin>>s;

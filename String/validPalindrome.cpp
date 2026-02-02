@@ -1,6 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// LeetCode 125: Valid Palindrome
+// https://leetcode.com/problems/valid-palindrome/
+
 // Valid Palindrome
 // example: "A man , a plan, a canal: Panama" -> true
 // result: "amanaplanacanalpanama"
@@ -27,5 +30,7 @@ bool isValidPalindrome(string s){
 
 
 int main(){
-
+    string s = "A man, a plan, a canal: Panama";
+    cout << (isValidPalindrome(s) ? "true" : "false") << endl;
+    return 0;
 }

@@ -1,6 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// LeetCode 485: Max Consecutive Ones
+// https://leetcode.com/problems/max-consecutive-ones/
+
 class Solution {
 public:
     int findMaxConsecutiveOnes(vector<int>& nums) {

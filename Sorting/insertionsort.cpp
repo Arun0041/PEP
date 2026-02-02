@@ -1,5 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
+
+// Insertion Sort Algorithm
+// Time Complexity: O(n^2)
+// Space Complexity: O(1)
+
 int main(){
     int n;
     cin>>n;

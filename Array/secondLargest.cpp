@@ -1,6 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// GeeksforGeeks: Find Second Largest Element
+// https://www.geeksforgeeks.org/find-second-largest-element-array/
+
 class Solution {
   public:
     int getSecondLargest(vector<int> &arr) {

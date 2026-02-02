@@ -6,6 +6,9 @@
 
 #include <bits/stdc++.h>
 using namespace std;
+
+// GeeksforGeeks: Max Sum Subarray of Size k
+// https://www.geeksforgeeks.org/find-maximum-sum-of-subarray-of-size-k/
 int maxSubarraySum(vector<int>& arr, int k) {
         // code here
         int n=arr.size();

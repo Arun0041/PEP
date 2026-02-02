@@ -1,9 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// LeetCode 162: Find Peak Element
+// https://leetcode.com/problems/find-peak-element/
 
 class Solution {
-    public int findPeakElement(int[] arr) {
+    public:
+    int findPeakElement(vector<int> arr) {
         int n=arr.size();
         if(n==1){
             return 0;

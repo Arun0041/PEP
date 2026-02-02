@@ -1,6 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// LeetCode 242: Valid Anagram
+// https://leetcode.com/problems/valid-anagram/
+
 bool isAnagram(string s, string t){
     int n1=s.size();
     int n2=t.size();
@@ -27,6 +30,7 @@ bool isAnagram(string s, string t){
 
 int main(){
     string s = "anagaram";
-    string t = "nagaram"
-
+    string t = "nagaram";
+    cout << (isAnagram(s, t) ? "true" : "false") << endl;
+    return 0;
 }

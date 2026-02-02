@@ -13,7 +13,9 @@ int largestElement(vector<int>& arr){
 }
 
 int main(){
-
+    vector<int> arr = {10, 5, 20, 15, 30};
+    cout << "Largest element: " << largestElement(arr) << endl;
+    return 0;
 }
 
 // Phillips company

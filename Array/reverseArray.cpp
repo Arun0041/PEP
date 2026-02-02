@@ -1,6 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// LeetCode 344: Reverse String (Array Version)
+// https://leetcode.com/problems/reverse-string/
+
 int main(){
     int arr[5] = {1,2,3,4,5};
     // reverse the array using two pointer approach

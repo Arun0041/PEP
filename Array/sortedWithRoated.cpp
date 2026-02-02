@@ -1,6 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// LeetCode 1752: Check if Array Is Sorted and Rotated
+// https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/
+
 bool check(vector<int> &arr)
 {
     int n = arr.size();

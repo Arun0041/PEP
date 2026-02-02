@@ -1,15 +1,22 @@
 #include<bits/stdc++.h>
 using namespace std;
-int pow(int n,int p){
-    int N=p;
-    if(N==0) return 1;
+
+// LeetCode 50: Pow(x, n)
+// https://leetcode.com/problems/powx-n/
+
+long long myPow(int n, int p){
+    if(p==0) return 1;
+    long long half = myPow(n, p/2);
     if(p%2==0){
-        return 
+        return half * half;
+    } else {
+        return half * half * n;
     }
 }
-int main(){
-    int n,p;
-    cin>>n;
-    cin>>p;
 
+int main(){
+    int n, p;
+    cin >> n >> p;
+    cout << myPow(n, p) << endl;
+    return 0;
 }

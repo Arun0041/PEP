@@ -1,5 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
+
+// Selection Sort Algorithm
+// Time Complexity: O(n^2)
+// Space Complexity: O(1)
+
 void selectionSort(vector<int>& arr){
     int n=arr.size();
     for(int i=0;i<n;i++){

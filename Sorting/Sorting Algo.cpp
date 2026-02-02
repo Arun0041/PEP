@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// Common Sorting Algorithms: Selection Sort, Bubble Sort, Insertion Sort
+// All implementations in one file for reference
 
 // 1. Selection Sort
 // select the minimum element from unsorted array and swap it with the first element of unsorted array

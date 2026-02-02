@@ -43,7 +43,11 @@ void reverseInGroups(vector<int> &arr, int k)
 }
 
 
-int main()
-{
+int main(){
+    vector<int> arr = {1, 2, 3, 4, 5, 6, 7, 8};
+    int k = 3;
+    reverseInGroups(arr, k);
+    for(int x : arr) cout << x << " ";
+    cout << endl;
     return 0;
 }

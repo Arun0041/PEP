@@ -1,5 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
+
+// GeeksforGeeks: Remove duplicates from string
 unordered_set<char> st;
 string removeDuplicate(string s,int n){
     string t="";
