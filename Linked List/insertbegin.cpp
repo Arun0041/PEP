@@ -20,6 +20,11 @@ void print(Node* head){
         head=head->next;
     }
 }
+bool printr(Node* head,int key){
+    if(head==NULL) return false;
+    if(head->val==key) return true;
+    return printr(head->next,key);
+}
 void deleteAtEnd(Node*& head){
     if(head==NULL) return;
     if(head->next==NULL){
@@ -33,6 +38,26 @@ void deleteAtEnd(Node*& head){
     delete(temp->next);
     temp->next=NULL;
 }
+void deleteAtPos(Node*& head,int pos){
+    if(head==NULL) return;
+    if(pos==1){
+        Node* temp=head;
+        temp=temp->next;
+        delete (head);
+        head=temp;
+        return;
+    }
+    int c=0;
+    Node* temp=head;
+    while(temp->next && c<pos){
+        temp=temp->next;
+        c++;
+    }
+    if(temp==NULL || temp->next==NULL) return;
+    Node* temp1 = temp->next;
+    temp->next=temp->next->next;
+    delete(temp1);
+}
 int main(){
     Node *head=new Node(5);
     insertAtBegin(head,10);
@@ -40,6 +65,10 @@ int main(){
     insertAtBegin(head,25);
     print(head);
     cout<<endl;
-    deleteAtEnd(head);
+    // deleteAtEnd(head);
+    // print(head);
+    deleteAtPos(head,2);
     print(head);
+    cout<<endl;
+    cout<<printr(head,1);
 }

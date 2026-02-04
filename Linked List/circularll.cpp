@@ -32,6 +32,48 @@ void print(Node* head){
         if(temp==head) return;;
     }
 }
+int printEven(Node* head){
+    if(head==NULL) return 0;
+    Node* temp=head;
+    int ans=0;
+    while(temp){
+        if(temp->val%2==0){
+            ans++;
+        }
+        temp=temp->next;
+        if(temp==head) return ans;
+    }
+}
+void deleteAtEnd(Node* &head){
+    if(head==NULL) return;
+    if(head->next==head){
+        delete(head);
+        head=NULL;
+        return;
+    }
+    Node* temp = head;
+    while(temp->next->next!=head){
+        temp=temp->next;
+    }
+    Node* t=temp->next;
+    temp->next=head;
+    delete(t);
+}
+void deleteAtBeg(Node* &head){
+    if(head==NULL) return;
+    if(head->next==head){
+        delete(head);
+        head=NULL;
+    }
+    Node* temp=head;
+    while(temp->next!=head){
+        temp=temp->next;
+    }
+    Node* t=head->next;
+    delete(head);
+    temp->next=t;
+    head=t;
+}
 int main(){
     Node* head=NULL;
     insertAtEnd(head,5);
@@ -39,4 +81,10 @@ int main(){
     insertAtEnd(head,25);
     insertAtEnd(head,35);
     print(head);
+    cout<<endl;
+    // deleteAtEnd(head);
+    deleteAtBeg(head);
+    print(head);
+    cout<<endl;
+    cout<<printEven(head);
 }
