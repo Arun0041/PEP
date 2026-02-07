@@ -26,7 +26,7 @@ int main(){
     st.push(10);
     st.push(55);
     st.push(2);
-    st.push(1);
+    st.push(10);
     cout<<st.top()<<endl;
     st.pop();
     cout<<st.top();
