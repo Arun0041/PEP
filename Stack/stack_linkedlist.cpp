@@ -1,9 +1,9 @@
-#include <iostream>
-#include <stdexcept>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-struct Node {
+class Node {
+public:
     int data;
     Node* next;
     Node(int d) : data(d), next(nullptr) {}
@@ -14,13 +14,9 @@ private:
     Node* head;
     int sz;
 public:
-    StackLL() : head(nullptr), sz(0) {}
-    ~StackLL() {
-        while (head) {
-            Node* t = head;
-            head = head->next;
-            delete t;
-        }
+    StackLL(){
+        head=nullptr;
+        sz = 0; 
     }
 
     void push(int x) {
@@ -32,7 +28,7 @@ public:
 
     void pop() {
         if (!head) {
-            throw runtime_error("pop from empty stack");
+            cout<<"stack underflow";
         }
         Node* t = head;
         head = head->next;
@@ -41,7 +37,7 @@ public:
     }
 
     int top() const {
-        if (!head) throw runtime_error("top from empty stack");
+        if (!head) return 0;
         return head->data;
     }
 
@@ -57,19 +53,12 @@ int main() {
 
     cout << "top: " << st.top() << '\n';
     st.pop();
-    cout << "top after pop: " << st.top() << '\n';
+    cout << "top:" << st.top() << '\n';
     cout << boolalpha << "empty: " << st.empty() << '\n';
     cout << "size: " << st.size() << '\n';
 
     st.pop();
     st.pop();
-    cout << boolalpha << "empty after removing all: " << st.empty() << '\n';
-
-    try {
-        st.pop();
-    } catch (const exception &e) {
-        cout << "caught exception: " << e.what() << '\n';
-    }
 
     return 0;
 }
