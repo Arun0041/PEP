@@ -35,4 +35,5 @@ int main(){
     c->right=f;
 
     cout<<countLeaf<<endl;
+    
 }
